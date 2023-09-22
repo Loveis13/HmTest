@@ -33,7 +33,7 @@ class CalculatorServiceImplTest {
     }
 
     @Test
-    void divide_shouldReturnNegativeNumWhenNum1IsPositiveAndNum2IsNegativeAndNum2BiggerTheNum1() {
+    void divide_shouldReturnNegativeNumWhenNum1IsPositiveAndNum2IsNegativeAndNum2TheNum1() {
         num2 = -5;
         double result = calculatorService.divide(num1, num2);
         assertEquals((double) num1 / num2, result);
@@ -56,7 +56,7 @@ class CalculatorServiceImplTest {
     }
 
     @Test
-    void minus_shouldReturnNegativeNumWhenNum1IsPositiveAndNum2IsNegativeAndNum2BiggerTheNum1() {
+    void minus_shouldReturnNegativeNumWhenNum1IsPositiveAndNum2IsNegativeAndNum2TheNum1() {
         num2 = + 6;
         long result = calculatorService.minus(num1, num2);
         assertEquals(num1 - num2, result);
@@ -71,7 +71,7 @@ class CalculatorServiceImplTest {
     }
 
     @Test
-    void multiply_shouldReturnNegativeNumWhenNum1IsPositiveAndNum2IsNegativeAndNum2BiggerTheNum1() {
+    void multiply_shouldReturnNegativeNumWhenNum1IsPositiveAndNum2IsNegativeAndNum2TheNum1() {
         long result = calculatorService.multiply(num1,num2);
         assertEquals(num1 * num2,result);
     }
